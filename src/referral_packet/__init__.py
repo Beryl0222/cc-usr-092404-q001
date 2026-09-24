@@ -1,5 +1,73 @@
-"""领域数据合同。"""
+"""转诊资料包领域合同与收件流程。"""
 
-from .contracts import DomainRecord, load_record
+from .contracts import (
+    ALLOWED_DOMAINS,
+    CURRENT_SCHEMA_VERSION,
+    LEGACY_SCHEMA_VERSION,
+    ContractError,
+    DomainRecord,
+    FieldContractError,
+    FutureVersionError,
+    JsonStructureError,
+    MigrationTrace,
+    ParsedPacket,
+    SemanticContractError,
+    load_record,
+    parse_json_text,
+    parse_record,
+)
+from .intake import (
+    ACCEPTED,
+    DUPLICATE,
+    HELD_FUTURE_VERSION,
+    QUARANTINED,
+    REVIEW,
+    STAGE_NOTIFIED,
+    STAGE_PERSISTED,
+    BatchResult,
+    BlockedRecord,
+    InMemoryNotifier,
+    Inbox,
+    IncomingItem,
+    Notifier,
+    OutageError,
+    Receipt,
+    Registry,
+    StoredEntry,
+)
 
-__all__ = ["DomainRecord", "load_record"]
+__all__ = [
+    # 合同
+    "ALLOWED_DOMAINS",
+    "CURRENT_SCHEMA_VERSION",
+    "LEGACY_SCHEMA_VERSION",
+    "ContractError",
+    "DomainRecord",
+    "FieldContractError",
+    "FutureVersionError",
+    "JsonStructureError",
+    "MigrationTrace",
+    "ParsedPacket",
+    "SemanticContractError",
+    "load_record",
+    "parse_json_text",
+    "parse_record",
+    # 收件
+    "ACCEPTED",
+    "DUPLICATE",
+    "HELD_FUTURE_VERSION",
+    "QUARANTINED",
+    "REVIEW",
+    "STAGE_NOTIFIED",
+    "STAGE_PERSISTED",
+    "BatchResult",
+    "BlockedRecord",
+    "InMemoryNotifier",
+    "Inbox",
+    "IncomingItem",
+    "Notifier",
+    "OutageError",
+    "Receipt",
+    "Registry",
+    "StoredEntry",
+]
