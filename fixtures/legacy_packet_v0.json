@@ -1,0 +1,9 @@
+{
+  "schema_version": 0,
+  "record_id": "sample-legacy-019",
+  "domain": "referral",
+  "occurred_at": "2026-09-19T17:30:00",
+  "revision": 0,
+  "source": "基层旧系统导出",
+  "timezone": "+08:00"
+}

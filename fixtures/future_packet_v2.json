@@ -1,0 +1,9 @@
+{
+  "schema_version": 2,
+  "record_id": "sample-future-019",
+  "domain": "referral_packet",
+  "occurred_at": "2026-09-25T09:00:00+08:00",
+  "revision": 1,
+  "source": "未来版本样例（当前软件只能原文留存，不得解释）",
+  "triage_window": "2026-09-25T09:30:00+08:00"
+}
